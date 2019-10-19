@@ -1,0 +1,13 @@
+D:\Phong\Demo\DukesStore\DukesStore.Persistence\bin\Debug\netcoreapp2.2\DukesStore.Persistence.deps.json
+D:\Phong\Demo\DukesStore\DukesStore.Persistence\bin\Debug\netcoreapp2.2\DukesStore.Persistence.runtimeconfig.json
+D:\Phong\Demo\DukesStore\DukesStore.Persistence\bin\Debug\netcoreapp2.2\DukesStore.Persistence.runtimeconfig.dev.json
+D:\Phong\Demo\DukesStore\DukesStore.Persistence\bin\Debug\netcoreapp2.2\DukesStore.Persistence.dll
+D:\Phong\Demo\DukesStore\DukesStore.Persistence\bin\Debug\netcoreapp2.2\DukesStore.Persistence.pdb
+D:\Phong\Demo\DukesStore\DukesStore.Persistence\bin\Debug\netcoreapp2.2\DukesStore.ApplicationCore.dll
+D:\Phong\Demo\DukesStore\DukesStore.Persistence\bin\Debug\netcoreapp2.2\DukesStore.ApplicationCore.pdb
+D:\Phong\Demo\DukesStore\DukesStore.Persistence\obj\Debug\netcoreapp2.2\DukesStore.Persistence.csprojAssemblyReference.cache
+D:\Phong\Demo\DukesStore\DukesStore.Persistence\obj\Debug\netcoreapp2.2\DukesStore.Persistence.AssemblyInfoInputs.cache
+D:\Phong\Demo\DukesStore\DukesStore.Persistence\obj\Debug\netcoreapp2.2\DukesStore.Persistence.AssemblyInfo.cs
+D:\Phong\Demo\DukesStore\DukesStore.Persistence\obj\Debug\netcoreapp2.2\DukesStore.Persistence.csproj.CopyComplete
+D:\Phong\Demo\DukesStore\DukesStore.Persistence\obj\Debug\netcoreapp2.2\DukesStore.Persistence.dll
+D:\Phong\Demo\DukesStore\DukesStore.Persistence\obj\Debug\netcoreapp2.2\DukesStore.Persistence.pdb

@@ -1,0 +1,10 @@
+D:\Phong\Demo\DukesStore\DukesStore.Infrastructure\bin\Debug\netcoreapp2.2\DukesStore.Infrastructure.deps.json
+D:\Phong\Demo\DukesStore\DukesStore.Infrastructure\bin\Debug\netcoreapp2.2\DukesStore.Infrastructure.runtimeconfig.json
+D:\Phong\Demo\DukesStore\DukesStore.Infrastructure\bin\Debug\netcoreapp2.2\DukesStore.Infrastructure.runtimeconfig.dev.json
+D:\Phong\Demo\DukesStore\DukesStore.Infrastructure\bin\Debug\netcoreapp2.2\DukesStore.Infrastructure.dll
+D:\Phong\Demo\DukesStore\DukesStore.Infrastructure\bin\Debug\netcoreapp2.2\DukesStore.Infrastructure.pdb
+D:\Phong\Demo\DukesStore\DukesStore.Infrastructure\obj\Debug\netcoreapp2.2\DukesStore.Infrastructure.csprojAssemblyReference.cache
+D:\Phong\Demo\DukesStore\DukesStore.Infrastructure\obj\Debug\netcoreapp2.2\DukesStore.Infrastructure.AssemblyInfoInputs.cache
+D:\Phong\Demo\DukesStore\DukesStore.Infrastructure\obj\Debug\netcoreapp2.2\DukesStore.Infrastructure.AssemblyInfo.cs
+D:\Phong\Demo\DukesStore\DukesStore.Infrastructure\obj\Debug\netcoreapp2.2\DukesStore.Infrastructure.dll
+D:\Phong\Demo\DukesStore\DukesStore.Infrastructure\obj\Debug\netcoreapp2.2\DukesStore.Infrastructure.pdb

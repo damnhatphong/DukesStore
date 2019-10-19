@@ -1,0 +1,63 @@
+﻿@model ProductCreationalViewModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Products</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Product.ProductName" class="control-label"></label>
+                <input asp-for="Product.ProductName" class="form-control" />
+                <span asp-validation-for="Product.ProductName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Product.Brand.BrandName" class="control-label"></label>
+                <select asp-for="Product.BrandId" class="form-control" asp-items="ViewBag.BrandId"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="Product.Category.CategoryName" class="control-label"></label>
+                <select asp-for="Product.CategoryId" class="form-control" asp-items="ViewBag.CategoryId"></select>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Product.ModelYear" class="control-label"></label>
+                <input asp-for="Product.ModelYear" class="form-control" />
+                <span asp-validation-for="Product.ModelYear" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Product.Description" class="control-label"></label>
+                <textarea asp-for="Product.Description" class="form-control" style="resize:none" ></textarea>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Price.Amount" class="control-label"></label>
+                <input asp-for="Price.Amount" class="form-control" />
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Price.Currency.CurrencyUnit" class="control-label"></label>
+                <select asp-for="Price.CurrencyId" class="form-control" asp-items="ViewBag.Currencies"></select>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

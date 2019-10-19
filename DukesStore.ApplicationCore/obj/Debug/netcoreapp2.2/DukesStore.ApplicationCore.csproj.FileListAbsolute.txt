@@ -1,0 +1,9 @@
+D:\Phong\Demo\DukesStore\DukesStore.ApplicationCore\bin\Debug\netcoreapp2.2\DukesStore.ApplicationCore.deps.json
+D:\Phong\Demo\DukesStore\DukesStore.ApplicationCore\bin\Debug\netcoreapp2.2\DukesStore.ApplicationCore.runtimeconfig.json
+D:\Phong\Demo\DukesStore\DukesStore.ApplicationCore\bin\Debug\netcoreapp2.2\DukesStore.ApplicationCore.runtimeconfig.dev.json
+D:\Phong\Demo\DukesStore\DukesStore.ApplicationCore\bin\Debug\netcoreapp2.2\DukesStore.ApplicationCore.dll
+D:\Phong\Demo\DukesStore\DukesStore.ApplicationCore\bin\Debug\netcoreapp2.2\DukesStore.ApplicationCore.pdb
+D:\Phong\Demo\DukesStore\DukesStore.ApplicationCore\obj\Debug\netcoreapp2.2\DukesStore.ApplicationCore.AssemblyInfoInputs.cache
+D:\Phong\Demo\DukesStore\DukesStore.ApplicationCore\obj\Debug\netcoreapp2.2\DukesStore.ApplicationCore.AssemblyInfo.cs
+D:\Phong\Demo\DukesStore\DukesStore.ApplicationCore\obj\Debug\netcoreapp2.2\DukesStore.ApplicationCore.dll
+D:\Phong\Demo\DukesStore\DukesStore.ApplicationCore\obj\Debug\netcoreapp2.2\DukesStore.ApplicationCore.pdb

@@ -1,0 +1,112 @@
+﻿@model IEnumerable<Products>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+<h1>Index</h1>
+
+
+<div class="card shadow mb-4">
+    <div class="card-header py-3">
+        <h6 class="m-0 font-weight-bold text-primary">Products</h6>
+    </div>
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>
+                            @Html.DisplayNameFor(model => model.ProductName)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.ModelYear)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Brand)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Category)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Price)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Price.Currency.CurrencyUnit)
+                        </th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <th>
+                            @Html.DisplayNameFor(model => model.ProductName)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.ModelYear)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Brand)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Category)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Price)
+                        </th> 
+                        <th>
+                            @Html.DisplayNameFor(model => model.Price.Currency.CurrencyUnit)
+                        </th>
+                        <th>Actions</th>
+                    </tr>
+                </tfoot>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.ProductName)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.ModelYear)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Brand.BrandName)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Category.CategoryName)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Price.Amount)
+                            </td>  
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Price.Currency.CurrencyUnit)
+                            </td>
+                            <td>
+                                <a asp-action="Edit" asp-route-id="@item.ProductId">Edit</a> |
+                                <a asp-action="Details" asp-route-id="@item.ProductId">Details</a> |
+                                <a asp-action="Delete" asp-route-id="@item.ProductId">Delete</a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+@section Scripts
+{
+    <!-- Page level plugins -->
+    <script src="~/vendor/datatables/jquery.dataTables.min.js"></script>
+    <script src="~/vendor/datatables/dataTables.bootstrap4.min.js"></script>
+
+    <!-- Page level custom scripts -->
+    <script src="~/js/demo/datatables-demo.js"></script>
+}
+
+@section CustomPageStyle
+{
+    <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+}

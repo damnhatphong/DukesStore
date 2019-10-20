@@ -9,9 +9,11 @@ using DukesStore.ApplicationCore.Entities;
 using DukesStore.Persistence;
 using DukesStore.ApplicationCore.Common;
 using DukesStore.ApplicationCore.ViewModels;
+using Microsoft.AspNetCore.Authorization;
 
 namespace DukesStore.Presentation.Controllers
-{
+{   
+    [Authorize]
     public class ProductsController : Controller
     {
         private readonly IDukesEShopContext _context;

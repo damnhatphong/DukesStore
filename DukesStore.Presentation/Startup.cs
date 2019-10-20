@@ -35,7 +35,13 @@ namespace DukesStore.Presentation
             //add Persistence service
             services.AddPersistence(Configuration);
             services.AddSession();
-
+            services.AddAuthentication()
+                .AddGoogle(options => {
+                    IConfigurationSection googleAuthNSection =
+                        Configuration.GetSection("Authentication:Google");
+                    options.ClientId = googleAuthNSection["ClientId"];
+                    options.ClientSecret = googleAuthNSection["ClientSecret"];
+                });
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
@@ -59,6 +65,7 @@ namespace DukesStore.Presentation
             app.UseCookiePolicy();
             app.UseCors();
             app.UseSession();
+            app.UseAuthentication();
 
             // Custom project route
             app.AddDukesStoreRoute();

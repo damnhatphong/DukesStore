@@ -7,3 +7,4 @@ D:\Phong\Demo\DukesStore\DukesStore.ApplicationCore\obj\Debug\netcoreapp2.2\Duke
 D:\Phong\Demo\DukesStore\DukesStore.ApplicationCore\obj\Debug\netcoreapp2.2\DukesStore.ApplicationCore.AssemblyInfo.cs
 D:\Phong\Demo\DukesStore\DukesStore.ApplicationCore\obj\Debug\netcoreapp2.2\DukesStore.ApplicationCore.dll
 D:\Phong\Demo\DukesStore\DukesStore.ApplicationCore\obj\Debug\netcoreapp2.2\DukesStore.ApplicationCore.pdb
+D:\Phong\Demo\DukesStore\DukesStore.ApplicationCore\obj\Debug\netcoreapp2.2\DukesStore.ApplicationCore.csprojAssemblyReference.cache

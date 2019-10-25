@@ -58,3 +58,13 @@ D:\Phong\Demo\DukesStore\DukesStore.Presentation\obj\Debug\netcoreapp2.2\Razor\V
 D:\Phong\Demo\DukesStore\DukesStore.Presentation\obj\Debug\netcoreapp2.2\Razor\Views\Categories\Details.cshtml.g.cs
 D:\Phong\Demo\DukesStore\DukesStore.Presentation\obj\Debug\netcoreapp2.2\Razor\Views\Categories\Edit.cshtml.g.cs
 D:\Phong\Demo\DukesStore\DukesStore.Presentation\obj\Debug\netcoreapp2.2\Razor\Views\Categories\Index.cshtml.g.cs
+D:\Phong\Demo\DukesStore\DukesStore.Presentation\obj\Debug\netcoreapp2.2\Razor\Views\Stocks\Create.cshtml.g.cs
+D:\Phong\Demo\DukesStore\DukesStore.Presentation\obj\Debug\netcoreapp2.2\Razor\Views\Stocks\Delete.cshtml.g.cs
+D:\Phong\Demo\DukesStore\DukesStore.Presentation\obj\Debug\netcoreapp2.2\Razor\Views\Stocks\Details.cshtml.g.cs
+D:\Phong\Demo\DukesStore\DukesStore.Presentation\obj\Debug\netcoreapp2.2\Razor\Views\Stocks\Edit.cshtml.g.cs
+D:\Phong\Demo\DukesStore\DukesStore.Presentation\obj\Debug\netcoreapp2.2\Razor\Views\Stocks\Index.cshtml.g.cs
+D:\Phong\Demo\DukesStore\DukesStore.Presentation\obj\Debug\netcoreapp2.2\Razor\Views\Currencies\Create.cshtml.g.cs
+D:\Phong\Demo\DukesStore\DukesStore.Presentation\obj\Debug\netcoreapp2.2\Razor\Views\Currencies\Delete.cshtml.g.cs
+D:\Phong\Demo\DukesStore\DukesStore.Presentation\obj\Debug\netcoreapp2.2\Razor\Views\Currencies\Details.cshtml.g.cs
+D:\Phong\Demo\DukesStore\DukesStore.Presentation\obj\Debug\netcoreapp2.2\Razor\Views\Currencies\Edit.cshtml.g.cs
+D:\Phong\Demo\DukesStore\DukesStore.Presentation\obj\Debug\netcoreapp2.2\Razor\Views\Currencies\Index.cshtml.g.cs

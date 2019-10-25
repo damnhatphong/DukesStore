@@ -1,0 +1,64 @@
+﻿@model Stocks
+
+@{
+    ViewData["Title"] = "Delete " + @Model.GetType().Name ;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container-fluid">
+
+    <!-- Page Heading -->
+    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+        <h1 class="h3 mb-0 text-gray-800"><strong>REMOVE PRODUCT FROM STOCK: @Model.Product.ProductName.ToUpper()</strong></h1>
+        <h3>
+            <strong>Please click a Delete Buttn below to remove Product from Stock</strong>
+        </h3>
+    </div>
+
+    <div class="row">
+        <!-- Earnings (Monthly) Card Example -->
+        <div class="col-xl-12 col-md-12 mb-4">
+            <div class="card border-left-primary shadow h-100 py-2">
+                <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                        <div class="col mr-2">
+                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">@Html.DisplayNameFor(model => model.Product.ProductName)</div>
+                            <div class="h5 mb-0 font-weight-bold text-gray-800">@Html.DisplayFor(model => model.Product.ProductName)</div>
+                        </div>
+                        <div class="col mr-2">
+                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">@Html.DisplayNameFor(model => model.Store.StoreName)</div>
+                            <div class="h5 mb-0 font-weight-bold text-gray-800">@Html.DisplayFor(model => model.Store.StoreName)</div>
+                        </div>
+                        <div class="col mr-2">
+                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">@Html.DisplayNameFor(model => model.Quantity)</div>
+                            <div class="h5 mb-0 font-weight-bold text-gray-800">@Html.DisplayFor(model => model.Quantity)</div>
+                        </div>
+                        <div class="col-auto">
+                            <i class="fas fa-calendar fa-2x text-gray-300"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="offset-10">
+            <form asp-action="Delete">
+                <input type="hidden" asp-for="StoreId" />
+                <input type="hidden" asp-for="ProductId" />
+                <a asp-action="Index" class="btn btn-light btn-icon-split">
+                    <span class="icon text-gray-600">
+                        <i class="fas fa-arrow-left"></i>
+                    </span>
+                    <span class="text">Back to List</span>
+                </a>
+                <button type="submit" class="btn btn-danger btn-icon-split">
+                    <span class="icon text-white-50">
+                        <i class="fas fa-trash"></i>
+                    </span>
+                    <span class="text">Delete</span>
+                </button>
+            </form>
+        </div>
+    </div>
+</div>

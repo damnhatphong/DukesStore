@@ -1,15 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using DukesStore.Infrastructure;
+﻿using DukesStore.Infrastructure;
 using DukesStore.Persistence;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Identity.UI;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
@@ -36,15 +29,16 @@ namespace DukesStore.Presentation
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
-            //add Persistence service
-            services.AddPersistence(Configuration);
             services.AddSession();
 
-            
-            services.AddAuthentication().AddExternalAuthenticationServices(Configuration);
+            //add Persistence service
+            services.AddPersistence(Configuration);
+
+            //add infrastructure service
+            services.AddInfrastructure(Configuration);
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2)
-                 .AddRazorPagesOptions(options =>
+                .AddRazorPagesOptions(options =>
                  {
                      options.AllowAreas = true;
                      options.Conventions.AuthorizeAreaFolder("Identity", "/Account/Manage");
@@ -57,6 +51,7 @@ namespace DukesStore.Presentation
                 options.LogoutPath = $"/Identity/Account/Logout";
                 options.AccessDeniedPath = $"/Identity/Account/AccessDenied";
             });
+
 
             services.AddSingleton<IEmailSender, EmailSender>();
         }

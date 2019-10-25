@@ -13,7 +13,6 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace DukesStore.Presentation.Controllers
 {   
-    [Authorize]
     public class ProductsController : Controller
     {
         private readonly IDukesEShopContext _context;

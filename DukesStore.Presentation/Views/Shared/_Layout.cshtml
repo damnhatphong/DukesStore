@@ -64,8 +64,8 @@
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Products Actions:</h6>
-                        <a  class ="collapse-item" asp-action="Index" >Product List</a>
-                        <a  class="collapse-item" asp-action="Create">Create Product</a>
+                        <a  class ="collapse-item" asp-controller="Products" asp-action="Index" >Product List</a>
+                        <a  class="collapse-item" asp-controller="Products" asp-action="Create">Create Product</a>
                     </div>
                 </div>
             </li>
@@ -78,11 +78,9 @@
                 </a>
                 <div id="collapseBrands" class="collapse" aria-labelledby="headingBrands" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Custom Utilities:</h6>
-                        <a class="collapse-item" href="utilities-color.html">Colors</a>
-                        <a class="collapse-item" href="utilities-border.html">Borders</a>
-                        <a class="collapse-item" href="utilities-animation.html">Animations</a>
-                        <a class="collapse-item" href="utilities-other.html">Other</a>
+                        <h6 class="collapse-header">Brand Actions:</h6>
+                        <a class="collapse-item" asp-controller="Brands" asp-action="Index">Brand List</a>
+                        <a class="collapse-item" asp-controller="Brands" asp-action="Create">Create Brand</a>
                     </div>
                 </div>
             </li>

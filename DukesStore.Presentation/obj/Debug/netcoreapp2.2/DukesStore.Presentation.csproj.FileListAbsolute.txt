@@ -48,3 +48,8 @@ D:\Phong\Demo\DukesStore\DukesStore.Presentation\obj\Debug\netcoreapp2.2\Razor\A
 D:\Phong\Demo\DukesStore\DukesStore.Presentation\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
 D:\Phong\Demo\DukesStore\DukesStore.Presentation\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
 D:\Phong\Demo\DukesStore\DukesStore.Presentation\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_LoginPartial.cshtml.g.cs
+D:\Phong\Demo\DukesStore\DukesStore.Presentation\obj\Debug\netcoreapp2.2\Razor\Views\Brands\Create.cshtml.g.cs
+D:\Phong\Demo\DukesStore\DukesStore.Presentation\obj\Debug\netcoreapp2.2\Razor\Views\Brands\Delete.cshtml.g.cs
+D:\Phong\Demo\DukesStore\DukesStore.Presentation\obj\Debug\netcoreapp2.2\Razor\Views\Brands\Details.cshtml.g.cs
+D:\Phong\Demo\DukesStore\DukesStore.Presentation\obj\Debug\netcoreapp2.2\Razor\Views\Brands\Edit.cshtml.g.cs
+D:\Phong\Demo\DukesStore\DukesStore.Presentation\obj\Debug\netcoreapp2.2\Razor\Views\Brands\Index.cshtml.g.cs

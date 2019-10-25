@@ -7,9 +7,9 @@ namespace DukesStore.Persistence
 {
     public static class DependencyInjection
     {
-        public static IServiceCollection AddPersistence(this IServiceCollection service, IConfiguration config)
+        public static IServiceCollection AddPersistence(this IServiceCollection service, IConfiguration configuration)
         {
-            service.AddDbContext<DukesEShopContext>(options => options.UseSqlServer(config.GetConnectionString("DukesEShop")));
+            service.AddDbContext<DukesEShopContext>(options => options.UseSqlServer(configuration.GetConnectionString("DukesEShop")));
             service.AddScoped<IDukesEShopContext,DukesEShopContext>();
             return service;
         }

@@ -1,7 +1,7 @@
 ﻿@model IEnumerable<Products>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] =  @Model.GetType().GetGenericArguments()[0].Name;
 }
 
 

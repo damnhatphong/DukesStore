@@ -1,7 +1,7 @@
 ﻿@model ProductCreationalViewModel
 
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "Create " + @Model.GetType().GetProperty("Product").Name;
 }
 
 <h1>Create</h1>

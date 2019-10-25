@@ -1,7 +1,7 @@
 ﻿@model ProductCreationalViewModel
 
 @{
-    ViewData["Title"] = "Edit";
+    ViewData["Title"] = "Edit " + @Model.GetType().GetProperty("Product").Name;
 }
 
     <div class="container-fluid">

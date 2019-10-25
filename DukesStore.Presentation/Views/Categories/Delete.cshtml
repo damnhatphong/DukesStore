@@ -1,16 +1,17 @@
-﻿@model Brands
+﻿@model Categories
 
 @{
     ViewData["Title"] = "Delete " + @Model.GetType().Name;
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+
 <div class="container-fluid">
 
     <!-- Page Heading -->
     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-        <h1 class="h3 mb-0 text-gray-800"><strong>DELETE BRAND: @Model.BrandName.ToUpper()</strong></h1>
+        <h1 class="h3 mb-0 text-gray-800"><strong>DELETE CATEGORY: @Model.CategoryName.ToUpper()</strong></h1>
         <h3>
-            <strong>Please click a Delete Buttn below to Erase Brand</strong>
+            <strong>Please click a Delete Buttn below to Erase Category</strong>
         </h3>
     </div>
 
@@ -21,8 +22,8 @@
                 <div class="card-body">
                     <div class="row no-gutters align-items-center">
                         <div class="col mr-2">
-                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">@Html.DisplayNameFor(model => model.BrandName)</div>
-                            <div class="h5 mb-0 font-weight-bold text-gray-800">@Html.DisplayFor(model => model.BrandName)</div>
+                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">@Html.DisplayNameFor(model => model.CategoryName)</div>
+                            <div class="h5 mb-0 font-weight-bold text-gray-800">@Html.DisplayFor(model => model.CategoryName)</div>
                         </div>
                         <div class="col-auto">
                             <i class="fas fa-calendar fa-2x text-gray-300"></i>
@@ -35,7 +36,7 @@
     <div class="row">
         <div class="offset-10">
             <form asp-action="Delete">
-                <input type="hidden" asp-for="BrandId" />
+                <input type="hidden" asp-for="CategoryId" />
                 <a asp-action="Index" class="btn btn-light btn-icon-split">
                     <span class="icon text-gray-600">
                         <i class="fas fa-arrow-left"></i>

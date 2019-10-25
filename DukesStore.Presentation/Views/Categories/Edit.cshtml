@@ -1,20 +1,21 @@
-﻿@model Brands
+﻿@model Categories
 
 @{
     ViewData["Title"] = "Edit "  + @Model.GetType().Name;
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
+
 <div class="container-fluid">
 
     <!-- Page Heading -->
     <div class="d-sm-flex align-items-center justify-content-center mb-4">
-        <h1 class="h3 mb-0 text-gray-800"><strong>EDIT BRAND: @Model.BrandName.ToUpper()</strong></h1>
+        <h1 class="h3 mb-0 text-gray-800"><strong>EDIT CATEGORY: @Model.CategoryName.ToUpper()</strong></h1>
 
     </div>
     <div class="d-sm-flex align-items-center justify-content-center mb-4">
         <h3>
-            <strong>Please click Save to modify Brand</strong>
+            <strong>Please click Save to modify Category</strong>
         </h3>
     </div>
 
@@ -23,11 +24,11 @@
         <div class="col-md-8">
             <form asp-action="Edit">
                 <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-                <input type="hidden" asp-for="BrandId" />
+                <input type="hidden" asp-for="CategoryId" />
                 <div class="form-group">
-                    <label asp-for="BrandName" class="control-label"></label>
-                    <input asp-for="BrandName" class="form-control" />
-                    <span asp-validation-for="BrandName" class="text-danger"></span>
+                    <label asp-for="CategoryName" class="control-label"></label>
+                    <input asp-for="CategoryName" class="form-control" />
+                    <span asp-validation-for="CategoryName" class="text-danger"></span>
                 </div>
                 <div class="form-group offset-9">
                     <a asp-action="Index" class="btn btn-light btn-icon-split">

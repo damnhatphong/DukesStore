@@ -57,7 +57,8 @@ namespace DukesStore.Presentation.Controllers
             ViewData["BrandId"] = new SelectList(_context.Brands, "BrandId", "BrandName");
             ViewData["CategoryId"] = new SelectList(_context.Categories, "CategoryId", "CategoryName");
             ViewData["Currencies"] = new SelectList(_context.Currencies, "CurrencyId", "CurrencyUnit");
-            return View();
+            ProductCreationalViewModel model = new ProductCreationalViewModel();
+            return View(model);
         }
 
         // POST: Products/Create

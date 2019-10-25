@@ -1,7 +1,7 @@
-﻿@model Brands
+﻿@model Categories
 
 @{
-    ViewData["Title"] = @Model.GetType().Name + " Details";
+    ViewData["Title"] =  @Model.GetType().Name + " Details";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
@@ -10,7 +10,7 @@
     <!-- Page Heading -->
     <!-- Page Heading -->
     <div class="d-sm-flex align-items-center justify-content-center mb-4">
-        <h1 class="h3 mb-0 text-gray-800"><b>BRAND NAME: @Model.BrandName.ToUpper()</b></h1>
+        <h1 class="h3 mb-0 text-gray-800"><b>CATEGORY NAME: @Model.CategoryName.ToUpper()</b></h1>
     </div>
 
     <div class="row">
@@ -20,8 +20,8 @@
                 <div class="card-body">
                     <div class="row no-gutters align-items-center">
                         <div class="col mr-2">
-                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">@Html.DisplayNameFor(model => model.BrandName)</div>
-                            <div class="h5 mb-0 font-weight-bold text-gray-800">@Html.DisplayFor(model => model.BrandName)</div>
+                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">@Html.DisplayNameFor(model => model.CategoryName)</div>
+                            <div class="h5 mb-0 font-weight-bold text-gray-800">@Html.DisplayFor(model => model.CategoryName)</div>
                         </div>
                         <div class="col-auto">
                             <i class="fas fa-calendar fa-2x text-gray-300"></i>
@@ -39,7 +39,7 @@
                 </span>
                 <span class="text">Back to List</span>
             </a>
-            <a asp-action="Edit" asp-route-id="@Model.BrandId" class="btn btn-primary btn-icon-split">
+            <a asp-action="Edit" asp-route-id="@Model.CategoryId" class="btn btn-primary btn-icon-split">
                 <span class="icon text-white-50">
                     <i class="fas fa-flag"></i>
                 </span>

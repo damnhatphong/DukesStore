@@ -53,3 +53,8 @@ D:\Phong\Demo\DukesStore\DukesStore.Presentation\obj\Debug\netcoreapp2.2\Razor\V
 D:\Phong\Demo\DukesStore\DukesStore.Presentation\obj\Debug\netcoreapp2.2\Razor\Views\Brands\Details.cshtml.g.cs
 D:\Phong\Demo\DukesStore\DukesStore.Presentation\obj\Debug\netcoreapp2.2\Razor\Views\Brands\Edit.cshtml.g.cs
 D:\Phong\Demo\DukesStore\DukesStore.Presentation\obj\Debug\netcoreapp2.2\Razor\Views\Brands\Index.cshtml.g.cs
+D:\Phong\Demo\DukesStore\DukesStore.Presentation\obj\Debug\netcoreapp2.2\Razor\Views\Categories\Create.cshtml.g.cs
+D:\Phong\Demo\DukesStore\DukesStore.Presentation\obj\Debug\netcoreapp2.2\Razor\Views\Categories\Delete.cshtml.g.cs
+D:\Phong\Demo\DukesStore\DukesStore.Presentation\obj\Debug\netcoreapp2.2\Razor\Views\Categories\Details.cshtml.g.cs
+D:\Phong\Demo\DukesStore\DukesStore.Presentation\obj\Debug\netcoreapp2.2\Razor\Views\Categories\Edit.cshtml.g.cs
+D:\Phong\Demo\DukesStore\DukesStore.Presentation\obj\Debug\netcoreapp2.2\Razor\Views\Categories\Index.cshtml.g.cs

@@ -11,22 +11,22 @@ using DukesStore.ApplicationCore.Common;
 
 namespace DukesStore.Presentation.Controllers
 {
-    public class BrandsController : Controller
+    public class CategoriesController : Controller
     {
         private readonly IDukesEShopContext _context;
 
-        public BrandsController(IDukesEShopContext context)
+        public CategoriesController(IDukesEShopContext context)
         {
             _context = context;
         }
 
-        // GET: Brands
+        // GET: Categories
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Brands.ToListAsync());
+            return View(await _context.Categories.ToListAsync());
         }
 
-        // GET: Brands/Details/5
+        // GET: Categories/Details/5
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -34,40 +34,40 @@ namespace DukesStore.Presentation.Controllers
                 return NotFound();
             }
 
-            var brands = await _context.Brands
-                .FirstOrDefaultAsync(m => m.BrandId == id);
-            if (brands == null)
+            var categories = await _context.Categories
+                .FirstOrDefaultAsync(m => m.CategoryId == id);
+            if (categories == null)
             {
                 return NotFound();
             }
 
-            return View(brands);
+            return View(categories);
         }
 
-        // GET: Brands/Create
+        // GET: Categories/Create
         public IActionResult Create()
         {
-            Brands brand = new Brands();
-            return View(brand);
+            Categories category = new Categories();
+            return View(category);
         }
 
-        // POST: Brands/Create
+        // POST: Categories/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("BrandId,BrandName")] Brands brands)
+        public async Task<IActionResult> Create([Bind("CategoryId,CategoryName")] Categories categories)
         {
             if (ModelState.IsValid)
             {
-                _context.Brands.Add(brands);
+                _context.Categories.Add(categories);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            return View(brands);
+            return View(categories);
         }
 
-        // GET: Brands/Edit/5
+        // GET: Categories/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -75,22 +75,22 @@ namespace DukesStore.Presentation.Controllers
                 return NotFound();
             }
 
-            var brands = await _context.Brands.FindAsync(id);
-            if (brands == null)
+            var categories = await _context.Categories.FindAsync(id);
+            if (categories == null)
             {
                 return NotFound();
             }
-            return View(brands);
+            return View(categories);
         }
 
-        // POST: Brands/Edit/5
+        // POST: Categories/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("BrandId,BrandName")] Brands brands)
+        public async Task<IActionResult> Edit(int id, [Bind("CategoryId,CategoryName")] Categories categories)
         {
-            if (id != brands.BrandId)
+            if (id != categories.CategoryId)
             {
                 return NotFound();
             }
@@ -99,12 +99,12 @@ namespace DukesStore.Presentation.Controllers
             {
                 try
                 {
-                    _context.Update(brands);
+                    _context.Update(categories);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!BrandsExists(brands.BrandId))
+                    if (!CategoriesExists(categories.CategoryId))
                     {
                         return NotFound();
                     }
@@ -115,10 +115,10 @@ namespace DukesStore.Presentation.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            return View(brands);
+            return View(categories);
         }
 
-        // GET: Brands/Delete/5
+        // GET: Categories/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -126,30 +126,30 @@ namespace DukesStore.Presentation.Controllers
                 return NotFound();
             }
 
-            var brands = await _context.Brands
-                .FirstOrDefaultAsync(m => m.BrandId == id);
-            if (brands == null)
+            var categories = await _context.Categories
+                .FirstOrDefaultAsync(m => m.CategoryId == id);
+            if (categories == null)
             {
                 return NotFound();
             }
 
-            return View(brands);
+            return View(categories);
         }
 
-        // POST: Brands/Delete/5
+        // POST: Categories/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var brands = await _context.Brands.FindAsync(id);
-            _context.Brands.Remove(brands);
+            var categories = await _context.Categories.FindAsync(id);
+            _context.Categories.Remove(categories);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
-        private bool BrandsExists(int id)
+        private bool CategoriesExists(int id)
         {
-            return _context.Brands.Any(e => e.BrandId == id);
+            return _context.Categories.Any(e => e.CategoryId == id);
         }
     }
 }

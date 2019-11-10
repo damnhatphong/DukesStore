@@ -11,7 +11,7 @@ namespace DukesStore.ApplicationCore.Entities
             OrderItems = new HashSet<OrderItems>();
             Stocks = new HashSet<Stocks>();
         }
-        [Display(Name="Product ID")]
+        [Display(Name = "Product ID")]
         public int ProductId { get; set; }
         [Display(Name = "Product Name")]
         public string ProductName { get; set; }
@@ -23,8 +23,12 @@ namespace DukesStore.ApplicationCore.Entities
         public short ModelYear { get; set; }
         [Display(Name = "Price ID")]
         public int PriceId { get; set; }
-        [Display(Name="Description")]
+        [Display(Name = "Description")]
         public string Description { get; set; }
+        
+        [Display(Name = "Product image")]
+        public string ImageURL { get; set; }
+
 
         public virtual Brands Brand { get; set; }
         public virtual Categories Category { get; set; }

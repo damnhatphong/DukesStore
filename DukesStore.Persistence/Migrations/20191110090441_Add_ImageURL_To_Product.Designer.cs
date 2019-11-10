@@ -4,14 +4,16 @@ using DukesStore.Persistence;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace DukesStore.Persistence.Migrations
 {
     [DbContext(typeof(DukesEShopContext))]
-    partial class DukesEShopContextModelSnapshot : ModelSnapshot
+    [Migration("20191110090441_Add_ImageURL_To_Product")]
+    partial class Add_ImageURL_To_Product
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
